@@ -2,7 +2,6 @@
   <div>
     <p v-if="loginStatus.length">{{this.loginStatus}}</p>
     <div class="login" v-if="!hideLogin">
-
     <h2>Login</h2>
     <form @submit.prevent="submitForm">
 
