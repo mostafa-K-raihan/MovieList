@@ -20,13 +20,13 @@
 <!--                <p>Director: {{clickedMovie.Runtime}}</p>-->
 <!--                <p>Director: {{clickedMovie.BoxOffice}}</p>-->
 
-                <h5>Ratings</h5>
-                <ul>
-                    <li v-for="r in clickedMovie.Ratings">
-                        {{r.Source}} => {{r.Value}}
-                    </li>
-                </ul>
-                <img :src="clickedMovie.Poster">
+<!--                <h5>Ratings</h5>-->
+<!--                <ul>-->
+<!--                    <li v-for="r in clickedMovie.Ratings">-->
+<!--                        {{r.Source}} => {{r.Value}}-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <img :src="clickedMovie.Poster">-->
             </div>
 
         </modal>

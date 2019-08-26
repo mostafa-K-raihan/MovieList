@@ -45,6 +45,7 @@ export default {
                   if(res.data.Status === 'OK') {
                     this.hideLogin = true;
                     this.loginStatus = "Successfully Logged in";
+                    this.$emit("auth")
                   }else if(res.data.Status === 'ERROR') {
                     this.loginStatus = "Authentication Failed";
                   }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Login/>
-    <Navbar/>
+    <Login @auth="listenAuth"/>
+    <Navbar v-if="!hide"/>
   </div>
 </template>
 
@@ -13,6 +13,16 @@ export default {
   components: {
     Navbar,
     Login
+  },
+  data()  {
+    return {
+      hide: true,
+    }
+  },
+  methods:{
+    listenAuth(){
+      this.hide = false;
+    }
   }
 };
 </script>
