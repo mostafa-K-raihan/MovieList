@@ -5,7 +5,6 @@ frontend/dist
 venv/
 app/migrations
 NewscredCodingTest/__pycache/
-NewscredCodingTest
 __pycache/
 
 # local env files
